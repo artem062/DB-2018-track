@@ -23,8 +23,6 @@ CREATE TABLE sessions(
 	FOREIGN KEY (user_id) REFERENCES users(user_id)
 );
 
-show tables;
-
 LOAD DATA INFILE '/var/lib/mysql-files/users.csv'
 INTO TABLE users
 FIELDS TERMINATED BY ','
